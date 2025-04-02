@@ -8,6 +8,7 @@ from dash import no_update
 import datetime as dt
 #Create app
 app = dash.Dash(__name__)
+server = app.server
 #Clear the layout and do not display exception till callback gets executed
 app.config.suppress_callback_exceptions = True
 # Read the wildfire data into pandas dataframe
